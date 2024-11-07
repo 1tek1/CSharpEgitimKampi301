@@ -13,6 +13,8 @@ namespace CSharpEgitimKampi301.EntityLayer.Concrete
         public string CategoryName { get; set; }
 
         public bool CategoryStatus { get; set; }
+
+        public List<Product> Products { get; set; }
     }
 }
 /*
