@@ -8,6 +8,7 @@ namespace CSharpEgitimKampi301.PresentationLayer
 {
     internal static class Program
     {
+        //Presentation Layer -> Business Layer -> Data Access Layer -> Entity Layer
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
