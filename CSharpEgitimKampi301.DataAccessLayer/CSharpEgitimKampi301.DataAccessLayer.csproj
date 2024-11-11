@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\IGenericDal.cs" />
     <Compile Include="Context\KampContext.cs" />
     <Compile Include="Migrations\202411101904334_mig1.cs" />
     <Compile Include="Migrations\202411101904334_mig1.Designer.cs">
@@ -70,7 +71,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Abstract\" />
     <Folder Include="EntityFramework\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
