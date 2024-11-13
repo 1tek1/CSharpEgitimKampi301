@@ -8,6 +8,7 @@ namespace CSharpEgitimKampi301.EFProject
 {
     internal static class Program
     {
+        //EntityFramework Travel Project
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
