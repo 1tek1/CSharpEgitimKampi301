@@ -11,6 +11,7 @@ namespace CSharpEgitimKampi301.EFProject
         //EntityFramework Travel Project
         //Entity Framework bir ORM aracıdır.
         //ORM veritabanı ile OOP arasında bir köprüdür.
+        //Tablo -> Sınıf , Sütun -> Özellik(Property)
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
