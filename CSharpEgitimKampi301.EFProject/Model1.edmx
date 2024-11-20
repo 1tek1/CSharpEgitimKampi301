@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="EgitimKampiEfTravelDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="EgitimKampiEfTravelDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Customer">
           <Key>
             <PropertyRef Name="CustomerId" />
@@ -12,6 +12,7 @@
           <Property Name="CustomerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="CustomerName" Type="nvarchar" MaxLength="50" />
           <Property Name="CustomerSurname" Type="nvarchar" MaxLength="50" />
+          <Property Name="CustomerBalance" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Guide">
           <Key>
@@ -65,8 +66,7 @@
             <End Role="Location" EntitySet="Location" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="EgitimKampiEfTravelDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -77,6 +77,7 @@
           <Property Name="CustomerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CustomerSurname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CustomerBalance" Type="Decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Guide">
           <Key>
@@ -141,6 +142,7 @@
           <EntitySetMapping Name="Customer">
             <EntityTypeMapping TypeName="EgitimKampiEfTravelDbModel.Customer">
               <MappingFragment StoreEntitySet="Customer">
+                <ScalarProperty Name="CustomerBalance" ColumnName="CustomerBalance" />
                 <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
                 <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
                 <ScalarProperty Name="CustomerSurname" ColumnName="CustomerSurname" />
