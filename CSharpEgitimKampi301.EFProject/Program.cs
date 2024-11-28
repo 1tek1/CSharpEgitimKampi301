@@ -8,7 +8,7 @@ namespace CSharpEgitimKampi301.EFProject
 {
     internal static class Program
     {
-        //!!!
+        //!!!!!
         //EntityFramework Travel Project
         //Entity Framework bir ORM aracıdır.
         //ORM veritabanı ile OOP arasında bir köprüdür.
@@ -21,7 +21,7 @@ namespace CSharpEgitimKampi301.EFProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            
         }
     }
 }
