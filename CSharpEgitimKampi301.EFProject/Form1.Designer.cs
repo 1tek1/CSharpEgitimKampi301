@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.Label();
+            this.textId = new System.Windows.Forms.TextBox();
             this.btn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textSurName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -43,22 +43,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // txtId
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(63, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Rehber Id";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.txtId.AutoSize = true;
+            this.txtId.Location = new System.Drawing.Point(63, 60);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(66, 16);
+            this.txtId.TabIndex = 0;
+            this.txtId.Text = "Rehber Id";
+            this.txtId.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // textId
             // 
-            this.textBox1.Location = new System.Drawing.Point(135, 54);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(179, 22);
-            this.textBox1.TabIndex = 1;
+            this.textId.Location = new System.Drawing.Point(135, 54);
+            this.textId.Name = "textId";
+            this.textId.Size = new System.Drawing.Size(179, 22);
+            this.textId.TabIndex = 1;
+            this.textId.TextChanged += new System.EventHandler(this.textId_TextChanged);
             // 
             // btn
             // 
@@ -80,12 +81,12 @@
             this.dataGridView1.Size = new System.Drawing.Size(440, 384);
             this.dataGridView1.TabIndex = 3;
             // 
-            // textBox2
+            // textName
             // 
-            this.textBox2.Location = new System.Drawing.Point(135, 91);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 22);
-            this.textBox2.TabIndex = 5;
+            this.textName.Location = new System.Drawing.Point(135, 91);
+            this.textName.Name = "textName";
+            this.textName.Size = new System.Drawing.Size(179, 22);
+            this.textName.TabIndex = 5;
             // 
             // label2
             // 
@@ -96,12 +97,12 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Rehber Adı";
             // 
-            // textBox3
+            // textSurName
             // 
-            this.textBox3.Location = new System.Drawing.Point(135, 132);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(179, 22);
-            this.textBox3.TabIndex = 7;
+            this.textSurName.Location = new System.Drawing.Point(135, 132);
+            this.textSurName.Name = "textSurName";
+            this.textSurName.Size = new System.Drawing.Size(179, 22);
+            this.textSurName.TabIndex = 7;
             // 
             // label3
             // 
@@ -120,6 +121,7 @@
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -157,14 +159,14 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textSurName);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textId);
+            this.Controls.Add(this.txtId);
             this.Name = "Form1";
             this.Text = "Rehber İşlemleri";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -176,13 +178,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label txtId;
+        private System.Windows.Forms.TextBox textId;
         private System.Windows.Forms.Button btn;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textSurName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnDelete;
