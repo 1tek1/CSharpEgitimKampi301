@@ -32,7 +32,12 @@ namespace CSharpEgitimKampi301.EFProject
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
+            Guide guide = new Guide();
+            guide.GuideName = textName.Text;
+            guide.GuideSurname = textSurName.Text;
+            db.Guide.Add(guide);
+            db.SaveChanges();
+            MessageBox.Show("Rehber başarıyla eklendi");
         }
     }
    

@@ -51,7 +51,7 @@
             this.txtId.Size = new System.Drawing.Size(66, 16);
             this.txtId.TabIndex = 0;
             this.txtId.Text = "Rehber Id";
-            this.txtId.Click += new System.EventHandler(this.label1_Click);
+           // this.txtId.Click += new System.EventHandler(this._Click);
             // 
             // textId
             // 
@@ -59,7 +59,7 @@
             this.textId.Name = "textId";
             this.textId.Size = new System.Drawing.Size(179, 22);
             this.textId.TabIndex = 1;
-            this.textId.TextChanged += new System.EventHandler(this.textId_TextChanged);
+          //  this.textId.TextChanged += new System.EventHandler(this.textId_TextChanged);
             // 
             // btn
             // 
@@ -169,7 +169,7 @@
             this.Controls.Add(this.txtId);
             this.Name = "Form1";
             this.Text = "Rehber İşlemleri";
-            this.Load += new System.EventHandler(this.Form1_Load);
+          //  this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
